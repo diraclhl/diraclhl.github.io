@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hongliang's Website - Big Data Processing</title><link href="https://diraclhl.github.io/" rel="alternate"></link><link href="https://diraclhl.github.io/feeds/big-data-processing.atom.xml" rel="self"></link><id>https://diraclhl.github.io/</id><updated>2018-01-10T11:20:07+01:00</updated><entry><title>Introduction to data processing using Spark</title><link href="https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html" rel="alternate"></link><published>2018-01-10T11:20:07+01:00</published><updated>2018-01-10T11:20:07+01:00</updated><author><name>Hongliang</name></author><id>tag:diraclhl.github.io,2018-01-10:/2018/introduction-to-data-processing-using-spark.html</id><summary type="html">&lt;p&gt;How to put Spark to work for big data processing ?&lt;/p&gt;</summary><content type="html">&lt;!-- font size="4" --&gt;
+
+&lt;p&gt;&lt;br&gt;
+&lt;p style="text-align: justify"&gt;
+Nowadays, industries are using Hadoop extensively to analyze their own datasets. 
+The main reason is that the Hadoop framework is built upon a simple programming 
+model, namely MapReduce, which enables a computing solution that is scalable, 
+flexible, fault-tolerant and cost-effective. Here, our main concern focuses on 
+how to maintain running speed in processing large datasets in terms of waiting 
+time between queries and waiting time to run different algorithms in data 
+mining.
+&lt;br&gt;
+&lt;br&gt;
+Historically, Spark was introduced by Apache Software Foundation for the purpose 
+of speeding up the Hadoop computational process. Apache Spark is growing as the 
+standard platform for Big Data processing. It should be kept in mind that Spark 
+is not a modified version of Hadoop and is not dependent on Hadoop because it 
+has its own cluster management. Hadoop is just one of the possibilities to 
+implement Spark. Practically, Spark employs the Hadoop system in two manners: 
+storage and processing. Since Spark has its own cluster management system, it 
+only needs Hadoop for storage purpose via the Hadoop Distributed File System 
+(HDFS). Furthermore, Apache Spark is an ideal alternative to the traditional 
+MapReduce model and considered to be more efficient for more types of 
+computations, which includes interactive queries and stream processing. In this 
+sense, Apache Spark is designed to be able to cover a wide range of workloads 
+such as batch applications, iterative algorithms, interactive queries and 
+streaming.
+&lt;br&gt;
+&lt;br&gt;
+In a nutshell, Apache Spark possesses the following features:
+&lt;ul&gt;
+    &lt;li style="text-align: justify"&gt;&lt;b&gt;Speed&lt;/b&gt; - Spark helps to run a code on 
+Hadoop cluster faster than traditional MapReduce tasks (generally up to 10 - 100 
+times). This is mainly due to fact that Spark performs in-memory processing of 
+data. This in-memory processing is a faster process as there is no time spent in 
+moving the data/processes in and out of the disk, namely reducing number of 
+read/write operations to disk, whereas MapReduce requires a lot of time to 
+perform these input/output operations thereby increasing latency. It only stores 
+the intermediate processing data in memory.&lt;/li&gt;
+    &lt;li style="text-align: justify"&gt;&lt;b&gt;Supporting multiple languages&lt;/b&gt; - Spark 
+provides built-in APIs in Java, Scala, Python or R. Therefore, one can write 
+applications in different languages. Spark comes up with 80 high-level operators 
+for interactive querying.&lt;/li&gt;
+    &lt;li style="text-align: justify"&gt;&lt;b&gt;Advanced Analytics&lt;/b&gt; - Spark also 
+offers SQL queries, Streaming data, Machine learning, and Graph algorithms.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+Different components have been integrated into the Spark framework. They can be 
+illustrated by the following figure:
+&lt;br&gt;
+&lt;center&gt;
+    &lt;img src="../images/spark-stack.png", width=400, height=200&gt;
+&lt;/center&gt;
+&lt;br&gt;
+Here, let us elaborate a little bit more on these different modules.
+&lt;ul&gt;
+    &lt;li style="text-align: justify"&gt; &lt;b&gt;Spark Core&lt;/b&gt; is the underlying 
+general execution engine for spark platform that all other functionality is 
+built upon. It provides In-Memory computing and referencing datasets in external 
+storage systems; &lt;/li&gt;
+    &lt;li style="text-align: justify"&gt; &lt;b&gt;Spark SQL&lt;/b&gt; is a component on top of 
+Spark Core that mainly introduces a new data abstraction called SchemaRDD, 
+which provides support for structured and semi-structured data; &lt;/li&gt;
+    &lt;li style="text-align: justify"&gt; &lt;b&gt;Spark Streaming&lt;/b&gt; leverages Spark 
+Core's fast scheduling capability to perform streaming analytics. It ingests 
+data in mini-batches and performs RDD (Resilient Distributed Datasets) 
+transformations on those mini-batches of data; &lt;/li&gt;
+    &lt;li style="text-align: justify"&gt; &lt;b&gt;Spark MLlib&lt;/b&gt; corresponds to a 
+built-in library containing machine learning algorithms which execute the 
+programs faster as they are executed in-memory at a very rapid rate; &lt;/li&gt;
+    &lt;li style="text-align: justify"&gt; &lt;b&gt;Spark GraphX&lt;/b&gt; is a distributed 
+graph-processing framework on top of Spark Core. It provides an API for 
+expressing graph computation that can model the user-defined graphs by using 
+Pregel abstraction API. It also provides an optimized runtime for this 
+abstraction. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;p style="text-align: justify"&gt;
+In the case of my current work, PySpark, which is the Python API for Spark, 
+will be employed for performing database queries and applying some common ML 
+algorithms to the selected datasets of the Vi-TECHNOLOGY project.
+&lt;/p&gt;&lt;/p&gt;</content><category term="Spark"></category></entry></feed>

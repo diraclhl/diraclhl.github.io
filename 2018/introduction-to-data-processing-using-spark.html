@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>Hongliang's Website - </title>
+    <meta name="description" content="" />
+    <meta name="Author" content="H. LU" />
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/html5.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/respond.min.js"></script>
+    <script type="text/javascript" src="http://stepofweb.gweb.io/.templates/IsisOne/HTML/assets/plugins/lt-ie9/excanvas.compiled.js"></script>
+    <![endif]-->
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Dosis:300,400" rel="stylesheet" type="text/css" />
+
+
+    <!-- CORE CSS FRAMEWORK -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- CSS TEMPLATE -->
+    <link href="https://diraclhl.github.io/theme/css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="https://diraclhl.github.io/theme/css/framework.css" rel="stylesheet" type="text/css" />
+    <link href="https://diraclhl.github.io/theme/css/typography.css" rel="stylesheet" type="text/css" />
+    <link href="https://diraclhl.github.io/theme/css/layout.css" rel="stylesheet" type="text/css" />
+
+    <link href="https://diraclhl.github.io/theme/css/blog.css" rel="stylesheet" type="text/css" />
+
+    <!-- ICONS -->
+        <link rel="shortcut icon" href="images/cat-favicon.png" type="image/x-icon" />
+
+    <!-- mobile settings -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+    <!-- Morenizr -->
+    <script type="text/javascript" src="https://diraclhl.github.io/theme/js/modernizr.min.js"></script>
+
+    <!-- google authorship -->
+</head>
+<body>
+
+<!-- Main Nav -->
+<header id="header" style="margin-top:0">
+
+  <nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+
+      <!-- Mobile Menu Button -->
+      <button id="mobileMenu" class="fa fa-bars" type="button" data-toggle="collapse" data-target=".navbar-collapse"></button>
+
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand scrollTo" href="#home">
+          <img src="" alt="" width="50" height="50" />
+          <span class="hidden-xs">Hongliang&#39;s Website</span>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+        <!-- Fullscreen Button - Unavailable for IE -->
+        <a href="#" class="btn-fullscreen"><i class="fa fa-external-link"></i></a>
+
+        <ul class="nav navbar-nav navbar-right">
+          <!-- If the user wants to make articles the home page then remove blog link, and make about and work links point to old home page. -->
+            <li><a href="https://diraclhl.github.io/index.html#home">Home</a></li>
+            <li><a href="https://diraclhl.github.io/index.html#about">About</a></li>
+            <li><a href="https://diraclhl.github.io/index.html#work">Work</a></li>
+            <li><a href="https://diraclhl.github.io/blog.html">Blog</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links <b class="caret"></b></a>
+              <ul class="dropdown-menu" style="background-color:#000">
+                <li style="background-color:#000"><a href="https://getpelican.com/" target="_blank">Pelican</a></li>
+                <li style="background-color:#000"><a href="https://python.org/" target="_blank">Python.org</a></li>
+                <li style="background-color:#000"><a href="http://jinja.pocoo.org/" target="_blank">Jinja2</a></li>
+                <li style="background-color:#000"><a href="https://arxiv.org/" target="_blank">ArXiv.org</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+
+    </div>
+  </nav>
+</header>
+<!-- /Main Nav -->  <section id="blog">
+    <article class="container">
+
+      <div class="row">
+        <div id="blog_main_area" class="left col-md-9">
+  <!-- article title -->
+  <header>
+      <h1>Introduction to data processing using Spark</h1>
+    <small class="fsize13">
+            <a href="https://diraclhl.github.io/category/big-data-processing.html" rel="tag tooltip" class="label label-default light" data-placement="right" data-original-title="1 article in this category"><i class="fa fa-dot-circle-o"></i> Big Data Processing</a>
+      <a href="https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html#disqus_thread" class="scrollTo label label-default light" data-disqus-identifier="2018/introduction-to-data-processing-using-spark.html"><i class="fa fa-comment-o"></i> ?? Comments</a>
+      <span class="label label-default light">Wed 10 January 2018</span> 
+    </small>
+  </header>
+
+  <article class='content'>
+    <!-- font size="4" -->
+
+<p><br>
+<p style="text-align: justify">
+Nowadays, industries are using Hadoop extensively to analyze their own datasets. 
+The main reason is that the Hadoop framework is built upon a simple programming 
+model, namely MapReduce, which enables a computing solution that is scalable, 
+flexible, fault-tolerant and cost-effective. Here, our main concern focuses on 
+how to maintain running speed in processing large datasets in terms of waiting 
+time between queries and waiting time to run different algorithms in data 
+mining.
+<br>
+<br>
+Historically, Spark was introduced by Apache Software Foundation for the purpose 
+of speeding up the Hadoop computational process. Apache Spark is growing as the 
+standard platform for Big Data processing. It should be kept in mind that Spark 
+is not a modified version of Hadoop and is not dependent on Hadoop because it 
+has its own cluster management. Hadoop is just one of the possibilities to 
+implement Spark. Practically, Spark employs the Hadoop system in two manners: 
+storage and processing. Since Spark has its own cluster management system, it 
+only needs Hadoop for storage purpose via the Hadoop Distributed File System 
+(HDFS). Furthermore, Apache Spark is an ideal alternative to the traditional 
+MapReduce model and considered to be more efficient for more types of 
+computations, which includes interactive queries and stream processing. In this 
+sense, Apache Spark is designed to be able to cover a wide range of workloads 
+such as batch applications, iterative algorithms, interactive queries and 
+streaming.
+<br>
+<br>
+In a nutshell, Apache Spark possesses the following features:
+<ul>
+    <li style="text-align: justify"><b>Speed</b> - Spark helps to run a code on 
+Hadoop cluster faster than traditional MapReduce tasks (generally up to 10 - 100 
+times). This is mainly due to fact that Spark performs in-memory processing of 
+data. This in-memory processing is a faster process as there is no time spent in 
+moving the data/processes in and out of the disk, namely reducing number of 
+read/write operations to disk, whereas MapReduce requires a lot of time to 
+perform these input/output operations thereby increasing latency. It only stores 
+the intermediate processing data in memory.</li>
+    <li style="text-align: justify"><b>Supporting multiple languages</b> - Spark 
+provides built-in APIs in Java, Scala, Python or R. Therefore, one can write 
+applications in different languages. Spark comes up with 80 high-level operators 
+for interactive querying.</li>
+    <li style="text-align: justify"><b>Advanced Analytics</b> - Spark also 
+offers SQL queries, Streaming data, Machine learning, and Graph algorithms.</li>
+</ul>
+<br>
+Different components have been integrated into the Spark framework. They can be 
+illustrated by the following figure:
+<br>
+<center>
+    <img src="../images/spark-stack.png", width=400, height=200>
+</center>
+<br>
+Here, let us elaborate a little bit more on these different modules.
+<ul>
+    <li style="text-align: justify"> <b>Spark Core</b> is the underlying 
+general execution engine for spark platform that all other functionality is 
+built upon. It provides In-Memory computing and referencing datasets in external 
+storage systems; </li>
+    <li style="text-align: justify"> <b>Spark SQL</b> is a component on top of 
+Spark Core that mainly introduces a new data abstraction called SchemaRDD, 
+which provides support for structured and semi-structured data; </li>
+    <li style="text-align: justify"> <b>Spark Streaming</b> leverages Spark 
+Core's fast scheduling capability to perform streaming analytics. It ingests 
+data in mini-batches and performs RDD (Resilient Distributed Datasets) 
+transformations on those mini-batches of data; </li>
+    <li style="text-align: justify"> <b>Spark MLlib</b> corresponds to a 
+built-in library containing machine learning algorithms which execute the 
+programs faster as they are executed in-memory at a very rapid rate; </li>
+    <li style="text-align: justify"> <b>Spark GraphX</b> is a distributed 
+graph-processing framework on top of Spark Core. It provides an API for 
+expressing graph computation that can model the user-defined graphs by using 
+Pregel abstraction API. It also provides an optimized runtime for this 
+abstraction. </li>
+</ul>
+</p>
+<p style="text-align: justify">
+In the case of my current work, PySpark, which is the Python API for Spark, 
+will be employed for performing database queries and applying some common ML 
+algorithms to the selected datasets of the Vi-TECHNOLOGY project.
+</p></p>
+  </article>
+
+  <div class="divider"><!-- lines divider --></div>
+
+  <!-- SOCIAL -->
+<p class="socials">
+    <a href="http://www.facebook.com/sharer/sharer.php?u=https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html" class="rounded-icon social fa fa-facebook" target="_blank" title="Share on Facebook"><!-- facebook --></a>
+    <a href="http://twitter.com/home?status=https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html" class="rounded-icon social fa fa-twitter" target="_blank" title="Share on Twitter"><!-- twitter --></a>
+    <a href="https://plus.google.com/share?url=https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html" class="rounded-icon social fa fa-google-plus" target="_blank" title="Share on Google+"><!-- google plus --></a>
+    <a href="http://pinterest.com/pin/create/link/?url==https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html" class="rounded-icon social fa fa-pinterest"  target="_blank" title="Share on Pinterest"><!-- pinterest --></a>
+    <a href="http://www.linkedin.com/shareArticle?mini=true&url=https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html&title=Introduction to data processing using Spark&summary=&source=" class="rounded-icon social fa fa-linkedin" target="_blank" title="Share on Linkedin"><!-- linkedin --></a>
+</p>  
+
+  <!-- TAGS -->
+  <p class="fsize16"> Tags:
+        <a href="/tag/spark.html" rel="tooltip" class="label label-default light" data-placement="right" data-original-title="1 article with this tag"><i class="fa fa-tags"></i> Spark</a>
+  </p>
+
+  <hr /><!-- divider -->
+
+    <div id="comments" class="comments">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        var disqus_shortname = 'hongliangswebsite';
+        var disqus_identifier = "2018/introduction-to-data-processing-using-spark.html";
+        var disqus_title = "Introduction to data processing using Spark";
+        var disqus_url = "https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html";
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus</a>.</noscript>
+    </div>
+        </div>
+
+        <!-- SIDEBAR -->
+        <div class="right col-md-3">
+          <!-- recent work -->
+          <!-- <div class="widget">
+
+                      <h3>Recent Work</h3>
+
+                      <a class="popup-image thumb" href="assets/images/preview/slider/1.jpg">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="popup-video thumb" href="http://www.youtube.com/watch?v=kh29_SERH0Y?rel=0">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="popup-video thumb" href="http://vimeo.com/23630702">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+
+                      <a class="external ajax-project thumb" href="project-external-1.html">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="external ajax-project thumb" href="project-external-2.html">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#888:#555555/auto/" alt="img" />
+                      </a>
+                      <a class="external ajax-project thumb" href="project-external-3.html">
+                          <img src="https://diraclhl.github.io/theme/img/1x1.png" class="ajax-project img-responsive" data-src="holder.js/85x85/#676767:#555555/auto/" alt="img" />
+                      </a>
+
+                      <div class="clearfix"></div>
+                  </div> -->
+
+          <!-- categories -->
+          <div class="widget">
+
+            <h3>Categories</h3>
+
+            <ul>
+               <li><a class="theme_link" href="https://diraclhl.github.io/category/big-data-processing.html"><i class="fa fa-dot-circle-o"></i> Big Data Processing</a>
+              </li>
+              <li><a class="theme_link" href="https://diraclhl.github.io/category/machine-learning.html"><i class="fa fa-dot-circle-o"></i> Machine Learning</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <!-- Archives -->
+          <div class="widget">
+
+            <h3>Archives</h3>
+
+            <!-- Get all of the articles with their dates -->
+            <div class="hidden">
+                None
+                None
+            </div>
+
+            <!-- If the user indicates they prefer a list.-->                <ul class="tree">
+                    <li>
+                        <span><i class="fa fa-minus-square-o"></i>2018</span>
+                        <ul>
+                            <li>
+                                <span><i class="fa fa-plus-square-o"></i>2018-01</span>
+                                <ul>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="https://diraclhl.github.io/2018/understanding-variational-bayesian-methods.html">
+                                            <small>Wed 10 January 2018</small>Understanding variational Bayesian methods</a>
+                                        </li>
+                                        <li style="display: none;">
+                                            <a class="theme_link" href="https://diraclhl.github.io/2018/introduction-to-data-processing-using-spark.html">
+                                            <small>Wed 10 January 2018</small>Introduction to data processing using Spark</a>
+                                        </li>
+                                </ul>
+                            </li>
+                        </ul></li>
+                </ul></div>
+
+        </div>
+        <!-- /SIDEBAR -->
+
+      </div>
+
+    </article>
+  </section>
+  <!-- /BLOG -->
+
+<!-- FOOTER -->
+<footer>
+
+  <!-- SCROOL TO TOP -->
+  <a href="#toTop" class="fa fa-arrow-up toTop"></a>
+
+  <div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6 copyright">
+            Hongliang&#39;s Website
+            <br />Powered by Pelican - BT3-Flat theme. Copyright &copy; 2018. All Rights Reserved.
+        </div>
+
+        <div class="col-md-6 text-right">
+              <a href="https://www.linkedin.com/in/hongliang-lyu" class="social fa fa-linkedin" target="_blank"></a>
+              <a href="https://github.com/diraclhl" class="social fa fa-github" target="_blank"></a>
+        </div>
+
+    </div>
+
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+
+
+<!-- CORE FILES -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.isotope.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/masonry.js"></script>
+
+<!-- PLUGINS -->
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.fitvids.min.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.appear.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.superslides.min.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.countTo.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/holder.js"></script>
+<!-- delete on production -->
+
+<!-- js scripts -->
+<script async type="text/javascript" src="https://diraclhl.github.io/theme/js/scripts.js"></script>
+
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/ImageAutoResize.js"></script>
+<script type="text/javascript" src="https://diraclhl.github.io/theme/js/application.js"></script>
+
+
+
+<script type="text/javascript">
+  /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+  var disqus_shortname = 'hongliangswebsite'; // required: replace example with your forum shortname
+
+  /* * * DON'T EDIT BELOW THIS LINE * * */
+  (function () {
+  var s = document.createElement('script'); s.async = true;
+  s.type = 'text/javascript';
+  s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+  }());
+</script>
+
+
+</body>
+
+</html>
